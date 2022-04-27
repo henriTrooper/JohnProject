@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "GENERIQUE_FRONT": {
+    "Personal-Portfolio-Angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,27 +17,24 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/GENERIQUE_FRONT",
+            "outputPath": "dist/Personal-Portfolio-Angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
             "production": {
-              "fileReplacements": [{
-                "replace": "src/environments/environment.ts",
-                "with": "src/environments/environment.prod.ts"
-              }],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -46,7 +43,8 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [{
+              "budgets": [
+                {
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
@@ -63,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "GENERIQUE_FRONT:build"
+            "browserTarget": "Personal-Portfolio-Angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "GENERIQUE_FRONT:build:production"
+              "browserTarget": "Personal-Portfolio-Angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "GENERIQUE_FRONT:build"
+            "browserTarget": "Personal-Portfolio-Angular:build"
           }
         },
         "test": {
@@ -92,13 +90,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -110,20 +103,18 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "GENERIQUE_FRONT:serve"
+            "devServerTarget": "Personal-Portfolio-Angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "GENERIQUE_FRONT:serve:production"
+              "devServerTarget": "Personal-Portfolio-Angular:serve:production"
             }
           }
         },
@@ -134,7 +125,7 @@
       }
     }
   },
-  "defaultProject": "GENERIQUE_FRONT",
+  "defaultProject": "Personal-Portfolio-Angular",
   "cli": {
     "analytics": "d5d9f68b-dce0-4de7-a15e-56e2bbd99b5e"
   }
