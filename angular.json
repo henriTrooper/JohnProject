@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Personal-Portfolio-Angular": {
+    "GENERIQUE_FRONT": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Personal-Portfolio-Angular",
+            "outputPath": "dist/GENERIQUE_FRONT",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Personal-Portfolio-Angular:build"
+            "browserTarget": "GENERIQUE_FRONT:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Personal-Portfolio-Angular:build:production"
+              "browserTarget": "GENERIQUE_FRONT:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Personal-Portfolio-Angular:build"
+            "browserTarget": "GENERIQUE_FRONT:build"
           }
         },
         "test": {
@@ -119,11 +119,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Personal-Portfolio-Angular:serve"
+            "devServerTarget": "GENERIQUE_FRONT:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Personal-Portfolio-Angular:serve:production"
+              "devServerTarget": "GENERIQUE_FRONT:serve:production"
             }
           }
         },
@@ -134,7 +134,7 @@
       }
     }
   },
-  "defaultProject": "Personal-Portfolio-Angular",
+  "defaultProject": "GENERIQUE_FRONT",
   "cli": {
     "analytics": "d5d9f68b-dce0-4de7-a15e-56e2bbd99b5e"
   }
