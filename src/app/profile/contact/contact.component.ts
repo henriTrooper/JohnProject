@@ -26,7 +26,7 @@ export class ContactComponent implements OnInit {
   onSubmit(name, subject, email, message) {
 
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.post('https://formspree.io/f/mlezowjl',
+    this.http.post('https://formspree.io/f/myyobded',
       { name: name, subject: subject, replyto: email, message: message },
       { 'headers': headers }).subscribe(
         response => {
