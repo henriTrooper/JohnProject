@@ -8,7 +8,7 @@ import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ContactComponent } from './contact/contact.component';
-import { EducationComponent } from './peinture/education.component';
+import { PeintureComponent } from './peinture/peinture.component';
 import { TerrassementComponent } from './terrassement/terrassement.component';
 import { MaconnerieComponent } from './maconnerie/maconnerie.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -30,7 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     IntroComponent,
     ContactComponent,
-    EducationComponent,
+    PeintureComponent,
     TerrassementComponent,
     MaconnerieComponent,
   ],
