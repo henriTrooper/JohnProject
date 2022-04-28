@@ -8,10 +8,10 @@ import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ContactComponent } from './contact/contact.component';
-import { EducationComponent } from './education/education.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { SkillsComponent } from './skills/skills.component';
-import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { EducationComponent } from './peinture/education.component';
+import { TerrassementComponent } from './terrassement/terrassement.component';
+import { MaconnerieComponent } from './maconnerie/maconnerie.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,11 +31,11 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
     IntroComponent,
     ContactComponent,
     EducationComponent,
-    ExperienceComponent,
-    SkillsComponent,
+    TerrassementComponent,
+    MaconnerieComponent,
   ],
   providers: [
-    { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
+    { provide: 'SnotifyToastConfig', useValue: ToastDefaults },
     SnotifyService,
   ]
 })
