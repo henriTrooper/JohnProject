@@ -3589,8 +3589,8 @@ img {
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(224, 23, 3, 0.6)));
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(18, 76, 235, 0.6)));
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(18, 76, 235, 0.6)));
   /* Standard syntax */
 }
 
@@ -3659,8 +3659,10 @@ img {
     /* For Safari 5.1 to 6.0 */
     /* For Opera 11.1 to 12.0 */
     /* For Firefox 3.6 to 15 */
-    background: -webkit-gradient(linear, left top, left bottom, from(#378C3F), color-stop(80%, #000));
-    background: linear-gradient(#378C3F 0%, #000 80%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 76, 235, 0.6)),
+        color-stop(80%, #000));
+    background: linear-gradient(rgba(18, 76, 235, 0.6) 0%,
+        #000 80%);
     /* Standard syntax (must be last) */
     opacity: 0.76;
     filter: alpha(opacity=76);
