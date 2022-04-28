@@ -1,6 +1,8 @@
 https://medium.com/rupesh-tiwari/how-to-deploy-angular-apps-to-github-pages-gh-pages-setup-ci-cd-for-angular-app-with-github-714c1e555de5
 https://betterprogramming.pub/building-angular-apps-using-github-actions-bf916b56ed0c
 
+https://henritrooper.github.io/JohnProject/
+
 1. Creating a GitHub Config
   - Go to the personal access tokens section in your GitHub settings.
   - Generate a new token ( TOKEN_GITHUB_ACTION_TROOPER )  which has scope for repository access and copy its value.
