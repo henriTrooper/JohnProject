@@ -4864,6 +4864,14 @@ img {
   position: relative;
 }
 
+.profile-image-about a {
+  position: relative;
+}
+
+.profile-image-icon a {
+  position: relative;
+}
+
 /* .profile-image a:before {
   content: "";
   border: 15px solid rgba(55, 140, 63, 0.6);
@@ -4883,7 +4891,6 @@ img {
 .profile-image img {
   position: relative;
   border-radius: 50%;
-  height: 200px;
   width: 250px;
   padding: 0;
   margin: 0;
@@ -4892,15 +4899,56 @@ img {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
+.profile-image-about img {
+  position: relative;
+  border-radius: 50%;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.profile-image-icon img {
+  position: relative;
+  border-radius: 50%;
+  width: 125px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
 
 .profile-image a:hover img {
   -webkit-transform: scale(1.06, 1.06);
-          transform: scale(1.06, 1.06);
+  transform: scale(1.06, 1.06);
 }
 
 .profile-image a:hover:before {
   -webkit-animation: none;
-          animation: none;
+  animation: none;
+}
+
+.profile-image-about a:hover img {
+  -webkit-transform: scale(1.06, 1.06);
+  transform: scale(1.06, 1.06);
+}
+
+.profile-image-about a:hover:before {
+  -webkit-animation: none;
+  animation: none;
+}
+
+.profile-image-icon a:hover img {
+  -webkit-transform: scale(1.06, 1.06);
+  transform: scale(1.06, 1.06);
+}
+
+.profile-image-icon a:hover:before {
+  -webkit-animation: none;
+  animation: none;
 }
 
 /* Profile Page Social button Style */
@@ -5158,7 +5206,7 @@ margin-left: 0px;
   background-color: #488c6c !important;
 }
 .timeline-badge.down {
-  background-color: #e9662c !important;
+  background-color: red !important;
 }
 .timeline-badge.neutral {
   background-color: #999999 !important;
