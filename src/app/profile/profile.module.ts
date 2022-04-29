@@ -8,10 +8,11 @@ import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ContactComponent } from './contact/contact.component';
-import { PeintureComponent } from './peinture/peinture.component';
+import { AssainissementComponent } from './assainissement/assainissement.component';
 import { TerrassementComponent } from './terrassement/terrassement.component';
-import { MaconnerieComponent } from './maconnerie/maconnerie.component';
+import { TerrassementPiscineComponent } from './terrassementPiscine/terrassementPiscine.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AmenagementExtComponent } from './amenagement-ext/amenagement-ext.component';
 
 
 @NgModule({
@@ -30,9 +31,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     IntroComponent,
     ContactComponent,
-    PeintureComponent,
+    AssainissementComponent,
     TerrassementComponent,
-    MaconnerieComponent,
+    TerrassementPiscineComponent,
+    AmenagementExtComponent
   ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults },

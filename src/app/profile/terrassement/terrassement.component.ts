@@ -12,6 +12,4 @@ export class TerrassementComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-
 }
