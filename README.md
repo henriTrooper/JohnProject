@@ -9,6 +9,7 @@ https://henritrooper.github.io/JohnProject/
 
 2. Create Angular Project
    - ng new SampleApp
+   - ng add angular-cli-ghpages
    - npm i 
   Update : 
    - In the root folder of your angular project, create a new folder, .github, and create a subfolder workflows. 
