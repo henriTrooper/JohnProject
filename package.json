@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve & node app.js",
-    "build": "ng build --prod --output-path docs --base-href=/JohnProject/",
+    "build": "ng build --prod --output-path docs --base-href=/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng deploy --base-href=/JohnProject/"
+    "deploy": "ng deploy --base-href=/"
   },
   "private": true,
   "dependencies": {
