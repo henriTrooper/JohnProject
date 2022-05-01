@@ -2006,9 +2006,11 @@ body {
 
 .navbar .navbar-nav .nav-link:not(.btn) {
   text-transform: uppercase;
-  font-size: 0.7142em;
+  font-size: 0.58333em;
   padding: 0.5rem 0.7rem;
   line-height: 1.625rem;
+  font-style: oblique;
+  font-weight: bold;
 }
 
 .navbar .navbar-nav .nav-link:not(.btn) i.fa+p,
@@ -3580,17 +3582,17 @@ img {
 }
 
 .page-header:before {
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .page-header[filter-color="orange"] {
-  background: rgba(44, 44, 44, 0.2);
+  /* background: rgba(44, 44, 44, 0.2); */
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(224, 23, 3, 0.6)));
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+  /* background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(18, 76, 235, 0.6)));
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(18, 76, 235, 0.6))); */
   /* Standard syntax */
 }
 
@@ -3659,8 +3661,10 @@ img {
     /* For Safari 5.1 to 6.0 */
     /* For Opera 11.1 to 12.0 */
     /* For Firefox 3.6 to 15 */
-    background: -webkit-gradient(linear, left top, left bottom, from(#378C3F), color-stop(80%, #000));
-    background: linear-gradient(#378C3F 0%, #000 80%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 76, 235, 0.6)),
+        color-stop(80%, #000));
+    background: linear-gradient(rgba(18, 76, 235, 0.6) 0%,
+        #000 80%);
     /* Standard syntax (must be last) */
     opacity: 0.76;
     filter: alpha(opacity=76);
@@ -5313,13 +5317,13 @@ img {
 /* Body */
 /* Profile Page Background Style */
 .page-header {
-  background: rgba(44, 44, 44, 0.2);
+  /* background: rgba(44, 44, 44, 0.2); */
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(55, 140, 63, 0.6)));
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
+  /* background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(55, 140, 63, 0.6)));
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6)); */
   /* Standard syntax */
 }
 
@@ -5368,31 +5372,59 @@ img {
   position: relative;
 }
 
-/* .profile-image a:before {
-  content: "";
-  border: 15px solid rgba(55, 140, 63, 0.6);
-  border-radius: 50%;
-  height: 200px;
-  width: 250px;
+.profile-image-about a {
   position: relative;
-  left: 0;
-  -webkit-animation: pulsate 1.6s ease-out;
-          animation: pulsate 1.6s ease-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  opacity: 0.0;
-  z-index: 99;
-} */
+}
+
+.profile-image-icon a {
+  position: relative;
+}
+
+.profile-image-terrassement a {
+  position: relative;
+}
 
 .profile-image img {
   position: relative;
   border-radius: 50%;
-  height: 200px;
   width: 250px;
   padding: 0;
   margin: 0;
   border: 15px solid transparent;
   z-index: 9999;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.profile-image-about img {
+  position: relative;
+  border-radius: 50%;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.profile-image-icon img {
+  position: relative;
+  border-radius: 50%;
+  width: 125px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.profile-image-terrassement img {
+  position: relative;
+  width: 650px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  border: 0px solid transparent;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
@@ -5403,6 +5435,36 @@ img {
 }
 
 .profile-image a:hover:before {
+  -webkit-animation: none;
+  animation: none;
+}
+
+.profile-image-about a:hover img {
+  -webkit-transform: scale(1.06, 1.06);
+  transform: scale(1.06, 1.06);
+}
+
+.profile-image-about a:hover:before {
+  -webkit-animation: none;
+  animation: none;
+}
+
+.profile-image-icon a:hover img {
+  -webkit-transform: scale(1.06, 1.06);
+  transform: scale(1.06, 1.06);
+}
+
+.profile-image-icon a:hover:before {
+  -webkit-animation: none;
+  animation: none;
+}
+
+.profile-image-terrassement a:hover img {
+  -webkit-transform: scale(1.06, 1.06);
+  transform: scale(1.06, 1.06);
+}
+
+.profile-image-terrassement a:hover:before {
   -webkit-animation: none;
   animation: none;
 }
@@ -5455,7 +5517,6 @@ img {
 }
 
 .cc-education .cc-education-header {
-  padding-top: 60px;
   padding-right: 0;
   text-align: center;
   color: #fff;
@@ -5680,7 +5741,7 @@ a.credit {
 }
 
 .timeline-badge.down {
-  background-color: #d80606 !important;
+  background-color: red !important;
 }
 
 .timeline-badge.neutral {
@@ -5699,4 +5760,16 @@ a.credit {
 
 .timeline-body>p+p {
   margin-top: 5px;
+}
+
+.carousel .carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 300px;
 }

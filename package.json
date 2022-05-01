@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve & node app.js",
-    "build": "ng build",
+    "build": "ng build --prod --output-path docs --base-href=/JohnProject/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
