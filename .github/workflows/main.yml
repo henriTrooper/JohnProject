@@ -38,7 +38,7 @@ jobs:
           npm ci
       - name: Build
         run: |
-          npm run build -- --prod
+          ng build --prod --output-path docs --base-href=/JohnProject/
       - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
